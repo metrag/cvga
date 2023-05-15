@@ -1,0 +1,4 @@
+@echo off
+start "http start" "\goi\connection\http start.py"
+start "server" "\goi\connection\server.py"
+start "gui" "site.url"
