@@ -1,135 +1,138 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta content="Display Webcam Stream" name="title">
-        <title>Operator GUI</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="top">
-            <div id="container">
-                <div id="videoplayer">
-                    <video autoplay id="videoElement"></video>
-                </div>
-            </div>
-
-            <div id="data">
-                <table>                
-                    <tr>
-                        <td>Широта:</td>
-                        <td><input id="lat" readonly value="60.01429"></td>
-                    </tr>
-                    <tr>
-                        <td>Долгота: </label></td>
-                        <td><input id="long" readonly readonly value="30.37698"></input>
-                    </tr>
-                    <tr>
-                        <td>Заряд:</td>
-                        <td><input id="bat" readonly readonly value="98%"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="control">
-            <button id="start">Старт</button>
-            <button id="stop">Стоп</button>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="json_updater.js"></script>
-        <script src="script.js"></script>
-    </body>
-=======
 <html lang="ru">
 
 <head>
     <meta charset="UTF_8">
     <title>Artem Gusev</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <table cellspacing="5">
-        <td>
-            <img src="img/me.jpeg" width="200" alt="тут моя фотка)">
-        </td>
-        <td>
-            <h1>Артём Гусев</h1>
-            <p><strong>Инженер-программист-электронщик</strong> - cтудент технического направления. </p>
-            <p>Мамкин хакер, <em>переустановлю вам винду</em> . Всё, что связано c техникой - ко мне.</p> В основное
-            время занимаюсь разработкой ПО
-            и изучением различных компьютерных технологий. Собрал <em>радиоприёмник</em> и <em>8 битный компьютер</em>.
-            <p>Веду активный образ жизни: занимаюсь спортом и путешествую. Люблю читать художественную и историческую литературу.
-            </p>
-        </td>
-    </table>
-    <hr>
-    <h2>Профессиональные интересы</h2>
-    <ul>
-        <li>Embedded systems</li>
-        <li>Цифровая схемотехника</li>
-        <li>C++</li>
-        <li>МК Avr, ESP</li>
-    </ul>
-    <hr>
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://vk.com/artm_g" target="_blank">VK</a></li>
-        <li><a href="https://t.me/ggmetra" target="_blank">Telegram</a></li>
-    </ul>
-    <hr>
-    <h2>Практический опыт</h2>
-    <table>
-        <tr>
-            <td>Всероссийский научно-технический конкурс «ИнтЭРА 2022»</td>
-            <td>"Электронная компонетная база" - Cистема для стенография (сервер-клиент)</td>
-            <td>3 место</td>
-        </tr>
-        <tr>
-            <td>VCA CTF 2022</td>
-            <td>Кибербезопасность</td>
-            <td>2 место</td>
-        </tr>
-        <tr>
-            <td>"Инженеры и изобретатели" МО РФ 2022 </td>
-            <td>Роботехника: Универсальная гусеничная платформа "Кадет"</td>
-            <td>2 место</td>
-        </tr>
-        <tr>
-            <td>ВСОШ Информатика 2023</td>
-            <td>Муниципальный этап г.СПБ</td>
-            <td>1 место</td>
-        </tr>
-        <tr>
-            <td>ВСОШ Физика 2023</td>
-            <td>Городской этап г.СПБ</td>
-            <td>Участник</td>
-        </tr>
-    </table>
-    <hr>
-    <form action="/">
-        <h2>Cвязаться со мной</h2>
+    <div class="container">
 
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
+        <div class="info">
+            <div class="info-top">
+                <div id="avatar">
+                    <img src="img/me.jpeg" alt="тут моя фотка)" id="me">
+                </div>
 
-        <br>
+                <div class="briefly">
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="Введите вашу эл.почту...">
+                    <div class="text">
+                        <h1>Артём Гусев</h1>
+                        <p>
+                            <strong style="color: darkslategrey;">Инженер-программист-электронщик</strong> - <br>
+                            <pre style="margin: 2px 0 100px 0;">           cтудент технического направления.</pre> 
+                        </p>
+                    </div>
 
-        <br>
 
-        <label for="text">Ваше сообщение:</label><br>
-        <textarea id="text" cols="30" rows="10"></textarea>
+                    <div class="social">
+                        <div>
+                            <a href="https://vk.com/artm_g" target="_blank"><img src="img/vk.png" alt="VK"></a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/ggmetra" target="_blank"><img src="img/telegram.png"
+                                    alt="Telegram"></a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/metra2019" target="_blank"><img src="img/github-sign.png"
+                                    alt="Github"></a>
+                        </div>
+                    </div>
 
-        <br>
-        <input type="submit" value="Связаться!">
-    </form>
-    <hr>
-    © Сайт создан в учёбных целях. Все персонажи и события вымышлены, любые совпадения случайны. 2022 GG
+                </div>
+
+
+            </div>
+
+            <div class="text">
+
+                <p>Мамкин хакер, <em>переустановлю вам винду</em>. Всё, что связано c техникой - ко мне...</p> <br>
+                <p>
+                    В основное время занимаюсь разработкой ПО и изучением различных компьютерных технологий.
+                    <br>Собрал <em>радиоприёмник</em> и <em>8 битный компьютер</em>.
+                </p>
+                <br>
+                <p>Веду активный образ жизни: занимаюсь спортом и путешествую. Люблю читать книги. </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" id="skills">
+            <h2>Профессиональные интересы</h2>
+            <ul class="list">
+                <li>Embedded systems</li>
+                <li>Цифровая схемотехника</li>
+                <li>C++</li>
+                <li>МК Avr, ESP</li>
+            </ul>
+        </div>
+
+        <div class="card" id="practice">
+
+            <h2>Практический опыт</h2>
+            <table сlass="table">
+                <tr>
+                    <td id="lcol">Всероссийский научно-технический конкурс «ИнтЭРА 2022»</td>
+                    <td>"Электронная компонетная база" -<br> Cистема для стенография (сервер-клиент)</td>
+                    <td id="rcol">3 место</td>
+                </tr>
+                <tr>
+                    <td id="lcol">VCA CTF 2022</td>
+                    <td>Кибербезопасность</td>
+                    <td id="rcol">2 место</td>
+                </tr>
+                <tr>
+                    <td id="lcol">"Инженеры и изобретатели" МО РФ 2022 </td>
+                    <td>Роботехника: <br> Универсальная гусеничная платформа "Кадет"</td>
+                    <td id="rcol">2 место</td>
+                </tr>
+                <tr>
+                    <td id="lcol">ВСОШ Информатика 2023</td>
+                    <td>Муниципальный этап г.СПБ</td>
+                    <td id="rcol">1 место</td>
+                </tr>
+                <tr>
+                    <td id="lcol">ВСОШ Физика 2023</td>
+                    <td>Городской этап г.СПБ</td>
+                    <td id="rcol">Участник</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div class="contact">
+            <h2>Cвязаться со мной</h2>
+
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Введите вашу эл.почту...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label><br>
+                    <textarea id="text" cols="30" rows="10"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+
+        </div>
+
+        <hr id="line">
+        ©Сайт создан в учёбных целях. Все персонажи и события вымышлены, любые совпадения случайны. <br> 2022
+    </div>
 </body>
 
->>>>>>> parent of a06850f (add css style)
 </html>
